@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>German Learning Resources</title>
+    <meta name="description" content="A premium library of German learning resources for students." />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+
+    <!-- =========================
+         Header
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <a href="#" class="logo">
+                German Library
+            </a>
+
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="main-nav" aria-label="Main Navigation">
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#resources">Resources</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+         Hero
+    ========================== -->
+
+    <section id="home" class="hero">
+
+        <div class="container">
+
+            <h1>
+                German Learning Resources
+            </h1>
+
+            <p>
+                Carefully selected videos, PDFs, and learning materials
+                organized by CEFR level.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         Filters
+    ========================== -->
+
+    <section class="filters">
+
+        <div class="container">
+
+            <form id="filter-form">
+
+                <input
+                    id="search-input"
+                    type="search"
+                    placeholder="Search resources..."
+                    autocomplete="off" />
+
+                <select id="level-filter">
+
+                    <option value="all">All Levels</option>
+
+                    <option value="a1">A1</option>
+                    <option value="a2">A2</option>
+                    <option value="b1">B1</option>
+                    <option value="b2">B2</option>
+                    <option value="c1">C1</option>
+                    <option value="c2">C2</option>
+
+                </select>
+
+                <select id="type-filter">
+
+                    <option value="all">All Types</option>
+
+                    <option value="video">Videos</option>
+
+                    <option value="pdf">PDFs</option>
+
+                </select>
+
+                <select id="topic-filter">
+
+                    <option value="all">All Topics</option>
+
+                </select>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+         Resource Section
+    ========================== -->
+
+    <main id="resources">
+
+        <section class="resource-library">
+
+            <div class="container">
+
+                <!-- Rendered by JavaScript -->
+
+                <div id="resource-container"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- =========================
+         Footer
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 German Learning Resources
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================
+         JavaScript
+    ========================== -->
+
+    <script type="module" src="assets/js/app.js"></script>
+
+</body>
+
+</html>

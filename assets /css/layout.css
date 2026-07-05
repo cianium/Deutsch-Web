@@ -1,0 +1,143 @@
+/* ==========================================================
+   Layout
+   ========================================================== */
+
+/* ---------- Container ---------- */
+
+.container {
+    width: min(100% - 2rem, var(--container-width));
+    margin-inline: auto;
+}
+
+/* ---------- Body ---------- */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    height: var(--header-height);
+
+    background: rgba(17, 19, 21, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border-bottom: var(--border);
+}
+
+.site-header .container {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ---------- Logo ---------- */
+
+.logo {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: .3px;
+}
+
+/* ---------- Navigation ---------- */
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+}
+
+.main-nav a {
+    color: var(--color-text-secondary);
+    transition: color var(--transition);
+}
+
+.main-nav a:hover {
+    color: var(--color-text);
+}
+
+/* ---------- Mobile Menu Button ---------- */
+
+.menu-toggle {
+    display: none;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+    padding-block: var(--space-9);
+}
+
+.hero .container {
+    max-width: 760px;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: var(--space-4);
+}
+
+.hero p {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-secondary);
+}
+
+/* ---------- Filters ---------- */
+
+.filters {
+    padding-bottom: var(--space-7);
+}
+
+#filter-form {
+    display: grid;
+    gap: var(--space-4);
+}
+
+/* ---------- Main ---------- */
+
+main {
+    flex: 1;
+}
+
+/* ---------- Resource Library ---------- */
+
+.resource-library {
+    padding-bottom: var(--space-9);
+}
+
+/* Dynamic cards grid */
+
+#resource-container {
+    display: grid;
+    gap: var(--space-5);
+
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(280px, 1fr)
+    );
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+    margin-top: auto;
+
+    border-top: var(--border);
+
+    padding: var(--space-6) 0;
+}
+
+.site-footer p {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
