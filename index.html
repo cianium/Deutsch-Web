@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>کتابخانه آلمانی</title>
+<style>
+  :root{
+    --bg: #14171C;
+    --surface: #1C2027;
+    --border: #2A2F38;
+    --text: #EDEBE6;
+    --text-soft: #9BA1AC;
+    --accent: #C9A24B;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    line-height:1.7;
+  }
+  header{
+    position:sticky; top:0; z-index:10;
+    background:rgba(20,23,28,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--border);
+    padding:18px 20px;
+  }
+  header h1{
+    font-size:18px; margin:0 0 12px;
+  }
+  .level-nav{
+    display:flex; gap:8px; flex-wrap:wrap;
+  }
+  .level-nav a{
+    color:var(--text-soft);
+    text-decoration:none;
+    font-size:13px;
+    padding:6px 12px;
+    border:1px solid var(--border);
+    border-radius:20px;
+  }
+  .level-nav a:hover{ color:var(--text); border-color:var(--accent); }
+
+  main{ max-width:800px; margin:0 auto; padding:20px; }
+
+  .level-section{
+    padding-block:36px;
+    border-bottom:1px solid var(--border);
+    scroll-margin-top:90px;
+  }
+  .level-title{
+    display:flex; align-items:center; gap:12px;
+    margin-bottom:20px;
+  }
+  .seal{
+    width:40px; height:40px; border-radius:50%;
+    border:1.5px solid var(--accent);
+    display:flex; align-items:center; justify-content:center;
+    font-size:13px; font-weight:bold; color:var(--accent);
+    flex-shrink:0;
+  }
+  .level-title h2{ font-size:20px; margin:0; }
+
+  .subsection-title{
+    font-size:13px;
+    color:var(--text-soft);
+    margin:24px 0 10px;
+    display:flex; align-items:center; gap:6px;
+  }
+
+  .item-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:16px;
+    margin-bottom:12px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .item-card h3{
+    font-size:15px; margin:0;
+  }
+  .item-card p{
+    font-size:13px; color:var(--text-soft); margin:0;
+  }
+  .item-links{
+    display:flex; gap:10px; flex-wrap:wrap;
+  }
+  .item-links a{
+    font-size:13px;
+    color:var(--bg);
+    background:var(--accent);
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:8px;
+    font-weight:600;
+  }
+  .item-links a.secondary{
+    background:transparent;
+    color:var(--text);
+    border:1px solid var(--border);
+  }
+
+  footer{
+    text-align:center;
+    padding:30px 20px;
+    color:var(--text-soft);
+    font-size:12px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📚 کتابخانه زبان آلمانی</h1>
+  <nav class="level-nav">
+    <a href="#a1">A1</a>
+    <a href="#a2">A2</a>
+    <a href="#b1">B1</a>
+    <a href="#b2">B2</a>
+    <a href="#c1">C1</a>
+    <a href="#c2">C2</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============================================================
+       برای افزودن سطح جدید یا مورد جدید، کل بلوک section یا
+       item-card رو کپی کن و لینک/عنوانش رو عوض کن.
+       ============================================================ -->
+
+  <!-- ==================== A1 ==================== -->
+  <section class="level-section" id="a1">
+    <div class="level-title">
+      <span class="seal">A1</span>
+      <h2>سطح مبتدی</h2>
+    </div>
+
+    <div class="subsection-title">🎬 ویدیوها</div>
+    <div class="item-card">
+      <h3>Nicos Weg – قسمت ۱</h3>
+      <p>سریال آموزشی Nicos Weg، مناسب شروع سطح A1</p>
+      <div class="item-links">
+        <a href="#" target="_blank">مشاهده در یوتیوب</a>
+      </div>
+    </div>
+
+    <div class="subsection-title">📘 کتاب و PDF</div>
+    <div class="item-card">
+      <h3>Starten wir A1</h3>
+      <p>کتاب آموزشی همراه با فایل صوتی</p>
+      <div class="item-links">
+        <a href="#" target="_blank">دانلود کتاب (PDF)</a>
+        <a href="#" target="_blank" class="secondary">دانلود فایل صوتی</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== A2 ==================== -->
+  <section class="level-section" id="a2">
+    <div class="level-title">
+      <span class="seal">A2</span>
+      <h2>سطح ابتدایی</h2>
+    </div>
+
+    <div class="subsection-title">🎬 ویدیوها</div>
+    <div class="item-card">
+      <h3>Extra Deutsch – قسمت ۱</h3>
+      <p>سریال آموزشی طنز، مناسب تقویت شنیداری A2</p>
+      <div class="item-links">
+        <a href="#" target="_blank">مشاهده در یوتیوب</a>
+      </div>
+    </div>
+
+    <div class="subsection-title">📘 کتاب و PDF</div>
+    <div class="item-card">
+      <h3>Starten wir A2</h3>
+      <p>کتاب آموزشی همراه با فایل صوتی</p>
+      <div class="item-links">
+        <a href="#" target="_blank">دانلود کتاب (PDF)</a>
+        <a href="#" target="_blank" class="secondary">دانلود فایل صوتی</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== B1 ==================== -->
+  <section class="level-section" id="b1">
+    <div class="level-title">
+      <span class="seal">B1</span>
+      <h2>سطح میانی</h2>
+    </div>
+
+    <div class="subsection-title">🎬 ویدیوها</div>
+    <div class="item-card">
+      <h3>مثال ویدیو B1</h3>
+      <p>توضیح کوتاه درباره ویدیو</p>
+      <div class="item-links">
+        <a href="#" target="_blank">مشاهده در یوتیوب</a>
+      </div>
+    </div>
+
+    <div class="subsection-title">📘 کتاب و PDF</div>
+    <div class="item-card">
+      <h3>مثال کتاب B1</h3>
+      <p>توضیح کوتاه درباره کتاب</p>
+      <div class="item-links">
+        <a href="#" target="_blank">دانلود کتاب (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== B2 ==================== -->
+  <section class="level-section" id="b2">
+    <div class="level-title">
+      <span class="seal">B2</span>
+      <h2>سطح میانی رو به بالا</h2>
+    </div>
+
+    <div class="subsection-title">🎬 ویدیوها</div>
+    <div class="item-card">
+      <h3>مثال ویدیو B2</h3>
+      <p>توضیح کوتاه درباره ویدیو</p>
+      <div class="item-links">
+        <a href="#" target="_blank">مشاهده در یوتیوب</a>
+      </div>
+    </div>
+
+    <div class="subsection-title">📘 کتاب و PDF</div>
+    <div class="item-card">
+      <h3>مثال کتاب B2</h3>
+      <p>توضیح کوتاه درباره کتاب</p>
+      <div class="item-links">
+        <a href="#" target="_blank">دانلود کتاب (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== C1 ==================== -->
+  <section class="level-section" id="c1">
+    <div class="level-title">
+      <span class="seal">C1</span>
+      <h2>سطح پیشرفته</h2>
+    </div>
+
+    <div class="subsection-title">🎬 ویدیوها</div>
+    <div class="item-card">
+      <h3>مثال ویدیو C1</h3>
+      <p>توضیح کوتاه درباره ویدیو</p>
+      <div class="item-links">
+        <a href="#" target="_blank">مشاهده در یوتیوب</a>
+      </div>
+    </div>
+
+    <div class="subsection-title">📘 کتاب و PDF</div>
+    <div class="item-card">
+      <h3>مثال کتاب C1</h3>
+      <p>توضیح کوتاه درباره کتاب</p>
+      <div class="item-links">
+        <a href="#" target="_blank">دانلود کتاب (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== C2 ==================== -->
+  <section class="level-section" id="c2">
+    <div class="level-title">
+      <span class="seal">C2</span>
+      <h2>سطح تسلط</h2>
+    </div>
+
+    <div class="subsection-title">🎬 ویدیوها</div>
+    <div class="item-card">
+      <h3>مثال ویدیو C2</h3>
+      <p>توضیح کوتاه درباره ویدیو</p>
+      <div class="item-links">
+        <a href="#" target="_blank">مشاهده در یوتیوب</a>
+      </div>
+    </div>
+
+    <div class="subsection-title">📘 کتاب و PDF</div>
+    <div class="item-card">
+      <h3>مثال کتاب C2</h3>
+      <p>توضیح کوتاه درباره کتاب</p>
+      <div class="item-links">
+        <a href="#" target="_blank">دانلود کتاب (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>Deutsch Bibliothek</footer>
+
+</body>
+</html>
